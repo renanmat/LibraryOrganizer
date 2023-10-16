@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro_usuarios.html">Cadastro de Usuários</a></li>
+                <li><a href="cadastro_clientes.html">Cadastro de Clientes</a></li>
+                <li><a href="cadastro_livros.html">Cadastro de Livros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Cadastro de Livros</h2>
+        <form id="cadastroLivrosForm" action="/processar_cadastro_livros" method="POST">
+            <div class="form-group">
+                <label for="livro_titulo">Titulo do livro:</label>
+                <input type="text" id="livro_titulo" name="livro_titulo" required>
+            </div>
+            <div class="form-group">
+                <label for="livro_autor">Autor do livro:</label>
+                <input type="text" id="livro_autor" name="livro_autor" required>
+            </div>
+            <div class="form-group">
+                <label for="livro_data">Data do livro:</label>
+                <input type="date" id="livro_data" name="livro_data" required>
+            </div>
+            <div class="form-group">
+                <label for="livro_edicao">Edição do livro:</label>
+                <input type="number" id="livro_edicao" name="livro_edicao" required>
+            </div>
+            <div class="form-group">
+                <label for="livro_prazo">Prazo para emprestimo do Livro(em dias):</label>
+                <input type="number" id="livro_prazo" name="livro_prazo" required>
+            </div>
+            <div class="form-group">
+                <label for="livro_preco">Preço do Livro (R$):</label>
+                <input type="number" id="livro_preco" name="livro_preco" step="0.01" required>
+            </div>
+
+            <button type="submit" id="submitLivroButton">Cadastrar Livro</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

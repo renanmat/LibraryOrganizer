@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cadastro_usuarios.html">Cadastro de Usuários</a></li>
+                <li><a href="cadastro_clientes.html">Cadastro de Clientes</a></li>
+                <li><a href="cadastro_livros.html">Cadastro de Livros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Cadastro de Clientes</h2>
+        <form id="cadastroClientesForm" action="/processar_cadastro_clientes" method="POST">
+            <div class="form-group">
+                <label for="cliente_nome">Nome do Cliente:</label>
+                <input type="text" id="cliente_nome" name="cliente_nome" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente_idade">Idade do Cliente:</label>
+                <input type="number" id="cliente_idade" name="cliente_idade" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente_email">E-mail do Cliente:</label>
+                <input type="email" id="cliente_email" name="cliente_email" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente_telefone">Telefone do Cliente:</label>
+                <input type="tel" id="cliente_telefone" name="cliente_telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="cliente_endereco">Endereco do Cliente:</label>
+                <input type="text" id="cliente_endereco" name="cliente_endereco" required>
+            </div>
+            <button type="submit" id="submitClienteButton">Cadastrar Cliente</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
